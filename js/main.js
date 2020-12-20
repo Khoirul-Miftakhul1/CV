@@ -42,7 +42,7 @@ window.onload = function () {
         }, 5000);
     
     function changeImage() {   
-        var BackgroundImg=["./images/aurora.jpg", "./images/senja.jpg", "./images/city.jpg", "./images/night.jpg", "./images/sea.jpg","./images/bs2.jpg"];
+        var BackgroundImg=["./images/aurora.jpg", "./images/Senja.jpg", "./images/city.jpg", "./images/night.jpg", "./images/sea.jpg", "./images/bs2.jpg"];
         var i = Math.floor((Math.random() * 6));
         document.getElementById("home").style.backgroundImage = 'url("' + BackgroundImg[i] + '")';
     }
