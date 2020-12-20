@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back-part{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: #000000;
+}
+.social-icons{
+    position: absolute;
+    font-size: 25px;
+    top: 45%;
+    left: 15%;
+}
+.social-icons img{
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+}
+.sign img{
+    position: absolute;
+    height: 120px;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%);
+}
+#dwn-icon{
+    padding-left: 10px;
+}
+.btn-dwn{
+    position: absolute;
+    right: 8%;
+    top: 45%;
+    background-color: rgb(22, 201, 31);
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    padding: 10px;
+    color: rgb(15, 15, 15);
+    font-weight: bold;
+    font-size: 20px;
+}
+.btn-dwn:hover{
+    cursor: pointer;
+    color: rgb(0, 255, 13);
+    background: none;
+    border: 1px solid rgb(0, 255, 13);
+}
+
+.per-img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/bback.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 37%;
+    left: 50%;
+    border: 3px #fff;
+    border-style: solid;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-part{
+    margin-top: 110px;
+}
+.main-part h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'audiowide', cursive;;
+}
+fieldset{
+    width: 100%;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 1300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.fieldset-cover{
+    padding: 10px;
+}
+legend{
+    font-size: 18px;
+    margin-left: 30px;
+    padding: 10px;
+    letter-spacing: 3px;
+    border: 2px solid rgb(5, 109, 128);
+    color: rgb(233, 236, 16);
+    background-color: rgb(5, 109, 128);
+    font-family: 'Righteous', monospace;
+    border-radius: 4px;
+}
+.per-detail, .work-detail{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: 10px;
+}
+.edu-detail{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.per-detail .edu-detail .work-detail, th{
+    text-align:left;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Kelly Slab';
+    letter-spacing: 3px;
+}
+.per-detail .edu-detail .work-detail, td{
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Baloo Tamma', sans-serif;
+}
+caption{
+    font-size: 20px;
+    float: left;
+    margin-left: 10%;
+    font-family: 'kelly slab', monospace;
+    font-weight: bold;
+    color:rgb(196, 124, 16);
+}
+.skill-section{
+    margin: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #f2f2f2;
+    max-width: 1300px;
+    margin-bottom: 20px;
+    
+}
+.skill-part{
+    display: flex;
+    flex-flow: wrap row;
+    max-width: 1200px;
+}
+.skill-part p{
+    font-size: 20px;
+    font-weight: 600;
+}
+@media(max-width:800px){
+    .skill-part{
+        flex-direction: column;
+    }
+    table{
+        width: 100%;
+    }
+}
+.design-skill{
+    flex: 1;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+}
+.prgm-skill{
+    flex: 1;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+}
+.container-skill {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+.skills {
+    text-align: right;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+/*Below code for skills*/
+.software {
+    width: 80%; 
+    background-color: #c2c03c; 
+    animation: software 2s;
+    
+}
+@keyframes software{
+    from
+    {
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+.hardware {
+    width: 70%; 
+    background-color: #33cf3b;
+    animation: hardware 2s;
+}
+@keyframes hardware{
+    from
+    {
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+.gerbang-logika{
+    width: 60%;
+    background-color: rgb(68, 0, 255);
+    animation: gerbang-logika 2s;
+}
+@keyframes gerbang-logika{
+    from
+    {
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+.arus-listrik{
+    width: 60%; 
+    background-color: darkgreen;
+    animation: arus-listrik 2s;
+}
+@keyframes arus-listrik{
+    from
+    {
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+.elektro{ 
+    width: 55%; 
+    background-color: firebrick;
+    animation: elektro 2s;
+}
+@keyframes elektro{
+    from
+    {
+        width: 0%;
+    }
+    to{
+        width: 55%;
+    }
+}
+.jalur-pcb{ 
+    width: 70%; 
+    background-color: rgb(150, 9, 150);
+    animation: jalur-pcb 2s;
+}
+@keyframes jalur-pcb{
+    from
+    {
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+.video-editor{
+    width: 75%; 
+    background-color: blueviolet;
+    animation: video-editor 2s;
+}
+@keyframes video-editor{
+    from
+    {
+        width: 0%;
+    }
+    to{
+        width: 75%;
+    }
+}
+.Otomotif{
+    width: 60%; 
+    background-color: rgb(43, 180, 173);
+    animation: Otomotif 2s;
+}
+@keyframes Otomotif{
+    from
+    {
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+.OS{ 
+    width: 70%; 
+    background-color: firebrick;
+    animation: OS 2s;
+}
+@keyframes OS{
+    from
+    {
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+.RC{
+    width: 50%; 
+    background-color: blueviolet;
+    animation: RC 2s;
+}
+@keyframes RC{
+    from
+    {
+        width: 0%;
+    }
+    to{
+        width: 50%;
+    }
+}

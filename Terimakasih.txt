@@ -1,0 +1,12 @@
+Terimakasih Sudah Mendownload
+
+
+CV ini masih jauh dari kata sempurna, dan pembuatan CV ini saya ambil dari source code yang berasal dari github https://github.com/Iamkrishnaa/portofolio-website
+
+
+saya hanya merubah bagian isinya tanpa merubah banyak code asalnya, dan juga CV ini untuk tujuan pendidikan yaitu UAS mata kuliah Rekayasa WEB  
+
+
+DIWAJIBKAN UNTUK MERUBAH SELURUH ISI PROFILE JIKA INGIN MENGUNDUH SOURCE CODE-NYA!!!!
+
+Mohon Masukan dan Sarannya, TERIMAKASIH

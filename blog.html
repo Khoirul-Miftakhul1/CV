@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta lang="en">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="shortcut icon" href="images/Iconslogo/kmh.png" />
+        <link href="css/blog.css" type="text/css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="toggle">
+            <span style="font-size:40px;cursor:pointer;margin-left: 10px;" onclick="openNav()" id="open">&#9776; </span>
+        </div>
+       <div id="myNav" class="navbar" style="background-color: rgba(0,0,0, 0.6);">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close">&times;</a>
+          <div class="navbar-content">
+            <a href="home.html">Home</a>
+            <a href="resume.html">CV</a>
+            <a href="blog.html" id="active">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="blog">
+           <h1 style="color:rgb(21, 0, 211); position: relative; left: 20%;"><span style="color: rgb(0, 255, 21); text-decoration: underline">B</span>log</h1>
+            <div class="blog-main">
+            <div class="main-part" id="main">
+               <div class="cont-img" id="coimg">
+               </div>
+               <div class="cont-text">
+                 <div  class="blog-header">
+                 <span class="social-icons">
+                     
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=blog.html" target="_blank"><img src="images/Iconslogo/facebook-32.png" class="fa-facebook"></a>
+                      
+                      <a href="https://twitter.com/share?url=https://twitter.com/Khoirul_KMH&amp;text=Khoirul Miftakhul%20Huda&amp;hashtags=Khoirul Miftakhul Huda" target="_blank"><img src="images/Iconslogo/twitter-32.png" class="fa-twitter"></a>
+                      
+                      <a href="https://www.instagram.com/khoirul.miftakhul1/" target="_blank"><img src="images/Iconslogo/instagram.png" class="fa-instagram"></a>
+                      
+                  </span>
+                  Booster Engine From Airflow
+                  <hr style="clear: both; height: 3px; background-color: #101010">
+                 </div>
+                   <p><b><span class="h2">Pengenalan</span></b><br>Saya akan melanjutkan penjelasan saya tentang bagaimana hanya karena masalah airflow atau udara masuk ke dalam mesin dapat mengakibatkan pengaruh performa pada kendaraan bermotor, disini saya melakukan eksperimen dalam motor pribadi saya sendiri<span id="dots" style="font-weight: bold;">....</span><span id="more">, untuk mengetahui bagaimana pola dari siklus kerja mesin, maka kita harus terlebih dahulu memahami bagaimana sebuah mesin dapat bekerja dimulai dari pengisian bensin hingga keluarnya sebuah asap transparan di knalpot.
+                       <br><b><span class="h2">Sistem Kerja Mesin</span></b><br>
+                   Pada umumnya sebuah mesin 4 tak sepeda motor bekerja menggunakan perhitungan 360⁰ dalam satu putaran, hal ini berlaku untuk sepeda motor jenis injeksi maupun karburator. Kita mulai dari pengapian, pengapian sepeda motor berasal dari gulungan spull yang bekerja bersamaan dengan putaran mesin dan mendapat input atau perintah dari CDI (jika masih karburator) dan ECU (jika sudah menggunakan sistem injeksi), dari spull ini diteruskan menuju koil untuk selanjutnya dihubungkan ke busi dan menghasilkan percikan api, yang mana pemicunya bisa dari stater elektrik dan juga bisa dari kick stater.
+                       <br><b><span class="h2">Sistem Kerja Pembakaran</span></b><br>
+                   Sebuah sepeda motor konvensional baik sistem karburator maupun injeksi, masih harus menggunakan bensin sebagai bahan bakar utama, karenanya dibutuhkan pencampuran yang pas antara udara dan juga percikan api untuk membakarnya. kita mulai dari saat bensin masuk, bensin akan langsung menuju intake manifold saat mesin melakukan dekrompresi atau proses hisap udara untuk memberikan campuran kepada bensin, setelah ini mesin akan melakukan proses kompresi setelah sebelumnya keluar percikan api pertama dari busi, dan disinilah proses pembakaran pertama terjadi. Selanjutnya proses ini akan dilanjutkan secara terus menerus hingga listrik dan pengapian dari CDI atau ECU dimatikan melalui kontak off.
+                       <br><b><span class="h2">Cara Kerja Airflow</span></b><br>
+                   Jadi dari dua penjelasan teori diatas, penjelasan mengenai sistem kerja dari airflow ini sendiri seharusnya sudah dapat dipahami, yaitu dengan menambah tingkat kapasistas udara masuk ke ruang bakar, maka akan meningkatkan tingkat potensi bensin untuk lebih cepat terbakar. Dan karena bensin lebih cepat terbakar, maka proses kompresi dan juga dekompresi akan menjadi lebih cepat, dengan demikian respon sepeda motor pun menjadi lebih cepat.<br>
+                   Respon yang meningkat ini akan menambah banyak manfaat terutama untuk penggunaan harian daerah perkotaan, karena respon meningkat maka bensin akan terasa seperti kering (kurang bahan bakar) sehingga menyebabkan hematnya konsumsumsi bensin, motor terasa seperti ringan, dan juga menghemat biaya pengeluaran harian.
+                       <br><b><span class="h2">Kesimpulan</span></b><br>
+                   Selain penjelasan saya diatas mengenai efek baik dari airflow, ada hal yang harus diperhatikan seperti diameter pembukaan atau penambahan airflow itu sendiri, karena jika kita menganut sistem membuka udara sebesar-besarnya, yang akan terjadi hanyalah motor tidak bertenaga dan muncul gejala (ngempos) saat tuas gas ditarik dalam atau secara tiba-tiba. Selain hal itu sangat penting juga untuk ukuran CC motor itu sendiri, komposisi mainjet dan pilot jet pada motor karburator, dan tingkat intensitas semburan bensin pada pompa bensin injeksi, selain itu tidak kalah penting untuk diperhatikan adalah derajat pengapian motor jangan sampai dirubah apalagi memotong bagian magnet jika tidak mengetahui perhitungannya.
+                   </span></p>
+                   <button onclick="myFunction()" id="myBtn" class="btn-more">Read more</button>
+               </div>
+            </div>
+        </div>
+        </div>
+        
+        <!--Copyright Information-->
+        <div class="copyright">
+            <p>&copy; 2020 <a href="https://github.com/Khoirul-Miftakhul1">Khoirul Miftakhul Huda</a></p>
+        </div>
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+                var main = document.getElementById("main");
+                var coimg = document.getElementById("coimg");
+              if (dots.style.display === "none") {
+                  dots.style.display = "inline";
+                  btnText.innerHTML = "Read more";
+                  moreText.style.display = "none";
+                  main.style.display = "flex";
+                  coimg.style.width = "350px";
+                  
+                  
+              } else {
+                  dots.style.display = "none";
+                  btnText.innerHTML = "Read less";
+                  moreText.style.display = "inline";
+                  main.style.display = "block";
+                  coimg.style.width = "100%";
+                  coimg.style.transition = "all 1s";
+                }
+        }
+        </script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
